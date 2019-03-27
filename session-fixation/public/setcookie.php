@@ -10,6 +10,7 @@ value:  <input type="text" name="value" value="" /><br />
 
 if (isset($_GET['key']) && isset($_GET['value'])) {
 	setcookie($_GET['key'], $_GET['value']);
+	header("Location: index.php");
 }
 
 ?>
