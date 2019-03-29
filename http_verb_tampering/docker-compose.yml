@@ -1,0 +1,32 @@
+version: "3.2"
+services:
+  php:
+    build: 
+      context: './phpPHP/'
+      args:
+       PHP_VERSION: ${PHP_VERSION}
+    networks:
+      - backend
+    volumes:
+      - ${PROJECT_ROOT}/:/var/www/html/
+    container_name: phpPHP
+  apache:
+    build:
+      context: './apacheA/'
+      args:
+       APACHE_VERSION: ${APACHE_VERSION}
+    depends_on:
+      - php
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "80:80"
+    volumes:
+      - ${PROJECT_ROOT}/:/var/www/html/
+    container_name: apacheA
+networks:
+  frontend:
+  backend:
+volumes:
+    data:
