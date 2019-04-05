@@ -1,7 +1,7 @@
 <?php
 
 function reg(){
-  if(strpos($_GET['user'], ' ') || strpos($_GET['passw'], ' ') || strpos($_GET['user'], '  ') || strpos($_GET['pass'], ' ')){
+  if(strpos($_GET['user'], ' ') || strpos($_GET['pass'], ' ') || strpos($_GET['user'], '  ') || strpos($_GET['pass'], ' ')){
     die();
   }
 	$file = fopen("users.txt", "a") or die("Unable to register!");
