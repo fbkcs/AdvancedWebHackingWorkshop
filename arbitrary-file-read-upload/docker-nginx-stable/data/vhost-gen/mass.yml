@@ -1,0 +1,160 @@
+---
+# Generic vhost generator configuration file.
+# Location: /etc/vhost-gen/mass.yml
+#
+# See: https://github.com/devilbox/vhost-gen
+#
+# If not specified or file is missing the following
+# default values will be merged to your current (if any)
+# configuration:
+#
+# server: nginx
+# conf_dir: /etc/nginx/conf.d
+# custom:
+# vhost:
+#   port:
+#   name:
+#     prefix:
+#     suffix:
+#   docroot:
+#     suffix:
+#   log:
+#     access:
+#       prefix:
+#       stdout: no
+#     error:
+#       prefix:
+#       stderr: no
+#     dir:
+#       create: no
+#       path: /var/log/nginx
+#   listen:
+#     enable: no
+#   php_fpm:
+#     enable: no
+#     address: php
+#     port: 9000
+#   alias: []
+#   deny: []
+#   server_status:
+#     enable: no
+#     alias: /server-status
+
+
+# The server type determines which template
+# from etc/templates/ will be chosen.
+# Allowed server types:
+# server: apache22
+# server: apache24
+# server: nginx
+server: nginx
+
+
+# Where to store the generated configuration files.
+# This must be a directory the web server will read
+# configuration files from.
+conf_dir: /etc/httpd/vhost.d
+
+
+# Custom directive
+# Everything specified here will be directly replaced
+# into the corresponding vhost directive:
+#   nginx:  server { HERE }
+#   apache: <VirtualHost *:80> HERE </VirtualHost>
+#
+# How to add multiline strings?
+#
+# custom: |
+#   custom statement 1
+#   custom statement 2
+custom:
+
+
+# Vhost definition
+vhost:
+  # What port should this virtual host listen on
+  port: 80
+  ssl_port: 443
+
+  # The virtual host name is specified as an command line argument
+  # to vhost_gen.py via '-n', however it is possible
+  # to prepend and/or append additional name strings.
+  name:
+    prefix:
+    suffix: __TLD__
+  # The document root directory is specified as an command line argument
+  # to vhost_gen.py via '-p', however it is possible
+  # to prepend another subdirectory here.
+  docroot:
+    suffix: __DOCROOT_SUFFIX__
+  # Array of indecies to serve as default files (e.g.: index.php, index.html, etc)
+  index:
+    - index.php
+    - index.html
+    - index.htm
+  # SSL Definition
+  ssl:
+    http2: True
+    dir_crt: /etc/httpd/cert/mass
+    dir_key: /etc/httpd/cert/mass
+    protocols: 'TLSv1 TLSv1.1 TLSv1.2'
+    honor_cipher_order: 'on'
+    ciphers: 'HIGH:!aNULL:!MD5'
+
+  # Log definition
+  log:
+    # Log file settings (error/access log)
+    access:
+      # By default the vhost name is used for log file names.
+      # You can also prepand an additional string to the access log
+      # as shown here:
+      # <prefix><vhost>-access.log
+      prefix: ''
+      # For use inside a docker container, enable this in order
+      # to redirect the access log to stdout instead of to file.
+      # NOTE: When enabling this, the prefix will have no effect and the access
+      # log will be stored under /tmp/www-access.log which will be a symlink of
+      # /dev/stdout
+      stdout: __DOCKER_LOGS_ACCESS__
+    error:
+      # By default the vhost name is used for log file names.
+      # You can also prepand an additional string to the error log
+      # as shown here:
+      # <prefix><vhost>-error.log
+      prefix: ''
+      # For use inside a docker container, enable this in order
+      # to redirect the error log to stderr instead of to file.
+      # NOTE: When enabling this, the prefix will have no effect and the error
+      # log will be stored under /tmp/www-error.log which will be a symlink of
+      # /dev/stderr
+      stderr: __DOCKER_LOGS_ERROR__
+    # Directory to store log files in.
+    # Also define if the directory should be created or not.
+    dir:
+      create: yes
+      path: /var/log/nginx-stable
+  # Enable PHP-FPM
+  php_fpm:
+    enable: __PHP_ENABLE__
+    # Hostname or IP address
+    address: __PHP_ADDR__
+    port: __PHP_PORT__
+    # Timeout to upstream FPM service
+    timeout: __PHP_TIMEOUT__
+  # Create additional aliases
+  alias:
+    - alias: /devilbox-api/
+      path: /var/www/default/api
+      # Allow cross-domain-request to this alias from the hosts/origin
+      # specified by the below defined regex
+      xdomain_request:
+        enable: yes
+        origin: 'http(s)?://(.*)$'
+  # Denies locations
+  deny:
+    - alias: '/\.git'
+    - alias: '/\.ht.*'
+  # Enable server status on the following alias
+  server_status:
+    enable: no
+    alias: /httpd-status

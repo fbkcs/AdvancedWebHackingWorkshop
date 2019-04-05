@@ -1,0 +1,72 @@
+###
+### Enable sudo (required for docker service)
+###
+sudo: required
+
+
+###
+### Language
+###
+language: python
+
+
+###
+### Add services
+###
+services:
+  - docker
+
+
+###
+### Build Matrix definition
+###
+env:
+  global:
+    # travis encrypt DOCKER_USERNAME=user
+    # travis encrypt DOCKER_PASSWORD=pass
+    # Must be regenerated when repository name/owner changes
+    # DOCKER_USERNAME
+    - secure: "pc9OJ5DhGNV6Sli4RCqI87YTen2gsS999opMNmD3mC64V+CIyQjkCwRCEm8h4rSxVgn6G7RZi2b8TjX6kGz0QX8uLqFJ9csJjkgzcRQOwcazW0bdf7qAJ6pW3XLsqvaxtlsU4KvBE7J6VQ9qqrviC2fI58QuXD1md1NOGbFP2XLtY4KAl2CoXb62BpYt4cDy7h8/+61l14ubjnpNByNXEO7gDvPvORD411WnRwdBaD0RDo+gc4Gin72kJwJwV9ImF5LYQTnQA0gPDHvwIay+kr9GNafjVgf2PuPT4oevaeFouruMXTESBsNa0VI2EBxGIFwvpE/1+6LnCOfupeTP/3WP6Kw4olWtjVnCEZ0oQLJ9RhSJC1n9Jdh0DI+qaWaUH6u1tUDPVw2m6DU82GxHQBAT8HJ1FWd7gnKrerMdSeFfmvDcCMrlQuvQhqA4b5M2qaSMa8DSIRBb4kqb8tuS4wYbinAWrus+h7DUPkACfQl6buzYtm+TFvDsf+AhasapnL9CR4s/DsH1XPOqB3Dr4TAbUaUw1In2asnWealeO+fMs+0fC+Fz/ybAds/2/i1GnKsPHewme8wYXXhfIqChFxf2ViY/Jv/MiT9948oI4S91H1lYO6sG7tj1pe1WvsoXoSKPTlIAVLhcs+V110e/vqX7eVA3LbXpp6emBpNgrQk="
+    # DOCKER_PASSWORD
+    - secure: "Fd8K0XhyGSHfll2zVKdVlWmgfXjsBsIWLgFbjOFL5F1QagFhz47swskwrF1+m/vCfFLXvPSIdYVsqNGkhdhoNysN67O3aU5E2IJam+UhC3jxo+nO0OkeVUErQN+EfdsKU3llx5gpzqXKzJztRfHCU5UZ0cirmu4hj23FFULWXi3N4AIog1040dpiM+5Xy/ug1BgF+A9O5j4HKZ5usyPSpi6mhZLEMwmCstJEfV7ws5gkL45p2ggWrT7KUwi7PivG5SiYTXqcqQV5cHleHmpFoXLkL4bXlGqu1JD2S1pxkEUK52L7V9Y7WtA3QF8Cjg7JwVf6EPBzkZVlSUxxUDhGpQ4YbUw73Ix5e2GDQ48BijAWJmlXNqGCl9p5ne/qq8zVMW+Rdv4bAyLZ225CfXBKK6HmjEq0S/XU1P7TfZvS+z1I2cjmITZscYCqFSv/JDKLntk6cStFYMpTLPA502MQRiOak7uvcgQPuEXDFV3c+umxlQQwMBvQhw4K0vlnzYkdrLb69Wukrl0TBawTzTtGhOQadoHP+VjWJWzTA8P+5WI0vqJb2VIcFc9+yaf3WPpLP0V2IEixUjllL74MYLrsgpMHHwj3lGKajbwLsj3F8mi+21bQnNPLAZ0SD+Bx6PYIu1TjC6yO/SnlPZpO68ZZIFDSFgAhm7puipJ6OStXltU="
+
+
+###
+### Global for all stages
+###
+install:
+  # Get newer docker version
+  - max=100; i=0; while [ $i -lt $max ]; do if sudo apt-get update; then break; else i=$((i+1)); fi done
+  - max=100; i=0; while [ $i -lt $max ]; do if sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce; then break; else i=$((i+1)); fi done
+  - docker version
+
+
+###
+### Build and test
+###
+before_script:
+  - make build
+  - make test
+  - make update-readme
+  - git diff --quiet || { echo "Build Changes"; git diff; git status; false; }
+
+
+###
+### Push to Dockerhub
+###
+script:
+  # Push to docker hub on success
+  - if [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+      make login USER="${DOCKER_USERNAME}" PASS="${DOCKER_PASSWORD}";
+      if [ -n "${TRAVIS_TAG}" ]; then
+        make push TAG="${TRAVIS_TAG}";
+      elif [ "${TRAVIS_BRANCH}" == "master" ]; then
+        make push;
+      elif [[ ${TRAVIS_BRANCH} =~ ^(release-[.0-9]+)$ ]]; then
+        make push TAG="${TRAVIS_BRANCH}";
+      else
+        echo "Skipping branch ${TRAVIS_BRANCH}";
+      fi
+    else
+      echo "Skipping push on PR";
+    fi
