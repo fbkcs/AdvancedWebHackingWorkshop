@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Try to mimic the behaviour php-fpm commandline binary
+
+if [ "${#}" -eq "0" ]; then
+
+	ln -sf /dev/stderr /usr/local/logs/php.log
+	ln -sf /dev/stderr /usr/local/logs/fpm.log
+	exec /usr/local/bin/php-cgi --fpm --fpm-config /usr/local/etc/php-fpm.conf
+
+elif [ "${#}" -eq "1" ]; then
+
+	if [ "${1}" = "--test" ]; then
+		exec echo "Not implemented: --test"
+	elif [ "${1}" = "-i" ]; then
+		exec /usr/local/bin/php-cgi -i
+	elif [ "${1}" = "-v" ]; then
+		exec /usr/local/bin/php-cgi -v
+	elif [ "${1}" = "-m" ]; then
+		exec /usr/local/bin/php-cgi -m
+	fi
+fi
