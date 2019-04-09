@@ -1,4 +1,5 @@
-./start.sh to start docker
-./end.sh to stop docker
+Start docker: ./start.sh
 
-directory files/ to upload files for example
+Stop docker: ./end.sh
+
+Examples for arbitrary upload in directory <br><strong>files</strong>
