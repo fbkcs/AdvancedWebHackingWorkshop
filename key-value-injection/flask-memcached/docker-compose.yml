@@ -1,0 +1,13 @@
+version: '2'
+services:
+    memcached:
+      image: memcached:alpine
+      container_name: memcached-memcached
+      ports:
+      - "11211:11211"
+    web:
+      build: ./web
+      ports:
+      - "8800:8800"
+      volumes:
+      - .:/code

