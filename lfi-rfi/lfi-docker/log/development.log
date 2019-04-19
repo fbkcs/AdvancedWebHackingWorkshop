@@ -1,0 +1,2360 @@
+
+
+Started GET "/" for ::1 at 2016-04-25 03:11:16 +0000
+Processing by Rails::WelcomeController#index as */*
+  Rendered /usr/local/bundle/gems/railties-4.0.8/lib/rails/templates/rails/welcome/index.html.erb (7.5ms)
+Completed 200 OK in 65ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard/" for 192.168.99.1 at 2016-04-25 03:12:26 +0000
+
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.9ms)
+
+
+Started GET "/app/dashboard" for 192.168.99.1 at 2016-04-25 03:12:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/app/dashboard"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.2ms)
+
+
+Started GET "/users/id" for 192.168.99.1 at 2016-04-25 03:12:45 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"id"}
+Completed 500 Internal Server Error in 47ms
+
+ActionView::MissingTemplate (Missing template user/id, application/id with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/1" for 192.168.99.1 at 2016-04-25 03:12:54 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 21ms
+
+ActionView::MissingTemplate (Missing template user/1, application/1 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/root" for 192.168.99.1 at 2016-04-25 03:12:57 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"root"}
+Completed 500 Internal Server Error in 31ms
+
+ActionView::MissingTemplate (Missing template user/root, application/root with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/admin" for 192.168.99.1 at 2016-04-25 03:13:00 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"admin"}
+Completed 500 Internal Server Error in 20ms
+
+ActionView::MissingTemplate (Missing template user/admin, application/admin with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/dashboard" for 192.168.99.1 at 2016-04-25 03:13:15 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"dashboard"}
+  Rendered user/dashboard.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 567ms (Views: 566.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-04-25 03:13:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-04-25 03:13:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-04-25 03:13:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-04-25 03:13:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-04-25 03:13:16 +0000
+
+
+Started GET "/" for 172.17.0.1 at 2019-04-16 13:53:44 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.8/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 17ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 172.17.0.1 at 2019-04-16 13:54:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.5ms)
+
+
+Started GET "/users/1" for 172.17.0.1 at 2019-04-16 13:54:30 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template user/1, application/1 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd" for 172.17.0.1 at 2019-04-16 13:54:40 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 13:54:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 13:54:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 13:54:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 13:54:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 13:54:40 +0000
+
+
+Started GET "/users/etc/passwd" for 172.17.0.1 at 2019-04-16 13:54:55 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/etc/passwd"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/users/%2F" for 172.17.0.1 at 2019-04-16 13:55:12 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd" for 172.17.0.1 at 2019-04-16 13:55:27 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 13:55:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 13:55:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 13:55:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 13:55:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 13:55:27 +0000
+
+
+Started GET "/users/%2fetc%2fpasswd" for 172.17.0.1 at 2019-04-16 14:04:35 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:04:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:04:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:04:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:04:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:04:35 +0000
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-16 14:08:21 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__3466876686870905398__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-16 14:08:25 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__3466876686870905398__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-16 14:08:26 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__3466876686870905398__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/users/%2fetc%2fpasswd" for 172.17.0.1 at 2019-04-16 14:08:39 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:08:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:08:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:08:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:08:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:08:39 +0000
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-16 14:08:43 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__3466876686870905398__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started GET "/users/.%2flog%2fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:09:00 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/users/.%2Flog%2fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:09:26 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:09:30 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:09:34 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/%2Fapp%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:11:21 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/app/log/development"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template app/log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:12:15 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment" for 172.17.0.1 at 2019-04-16 14:12:36 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:12:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/users/dashboard" for 172.17.0.1 at 2019-04-16 14:12:58 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"dashboard"}
+  Rendered user/dashboard.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:12:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:12:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:12:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:12:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:12:58 +0000
+
+
+Started GET "/users/dashboard?test=as" for 172.17.0.1 at 2019-04-16 14:13:04 +0000
+Processing by UserController#show as HTML
+  Parameters: {"test"=>"as", "id"=>"dashboard"}
+  Rendered user/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:13:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:13:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:13:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:13:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:13:04 +0000
+
+
+Started GET "/users/dashboard?test=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-16 14:13:16 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__3466876686870905398__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/users/%2fetc%2fpasswd" for 172.17.0.1 at 2019-04-16 14:14:16 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:14:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:16 +0000
+
+
+Started GET "/users/%2fetc%2fshells" for 172.17.0.1 at 2019-04-16 14:14:21 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/shells"}
+DEPRECATION WARNING: The file /etc/shells did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/shells within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:14:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:14:21 +0000
+
+
+Started GET "/users/%2flog%2f" for 172.17.0.1 at 2019-04-16 14:14:35 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/log/"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template /log with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2fapp%2fDockerfile" for 172.17.0.1 at 2019-04-16 14:15:29 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/app/Dockerfile"}
+DEPRECATION WARNING: The file /app/Dockerfile did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered Dockerfile within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:15:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:15:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:15:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:15:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:15:29 +0000
+
+
+Started GET "/users/%2fapp%2fReadme.md" for 172.17.0.1 at 2019-04-16 14:15:44 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/app/Readme"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template app/Readme with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/%2fapp%2fReadme.md" for 172.17.0.1 at 2019-04-16 14:16:09 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/app/Readme"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template app/Readme with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2fapp%2fGemfile" for 172.17.0.1 at 2019-04-16 14:16:24 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/app/Gemfile"}
+DEPRECATION WARNING: The file /app/Gemfile did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered Gemfile within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 14:16:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 14:16:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 14:16:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 14:16:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 14:16:24 +0000
+
+
+Started GET "/users/%2fapp%2flog" for 172.17.0.1 at 2019-04-16 14:16:40 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/app/log"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template app/log with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2fapp%2flog%2fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:16:53 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/app/log/development"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template app/log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2fapp%2flog%2fdocker-compose.yml" for 172.17.0.1 at 2019-04-16 14:18:12 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/app/log/docker-compose"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template app/log/docker-compose with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-16 14:23:11 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__3466876686870905398__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/users/.%2flog%2fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:23:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/users/.%2flog%2fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:26:56 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/users/.%2flog%2fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:27:26 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/users/%2Fapp%2Fconfig%2Froutes.tb" for 172.17.0.1 at 2019-04-16 14:28:06 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/app/config/routes"}
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template app/config/routes with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/.%2Fconfig%2Froutes.tb" for 172.17.0.1 at 2019-04-16 14:28:27 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Fconfig%2Froutes.tb"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/users/.%2Fconfig%2F" for 172.17.0.1 at 2019-04-16 14:28:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Fconfig%2F"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/users/.%2Fconfig" for 172.17.0.1 at 2019-04-16 14:28:43 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Fconfig"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-16 14:29:05 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/users/%2F???%2F????w?" for 172.17.0.1 at 2019-04-16 15:11:08 +0000
+Processing by UserController#show as HTML
+  Parameters: {"??/????w?"=>nil, "id"=>"/"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/users/%2Fetc%2F????w?" for 172.17.0.1 at 2019-04-16 15:12:23 +0000
+Processing by UserController#show as HTML
+  Parameters: {"???w?"=>nil, "id"=>"/etc/"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template /etc with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/%2Fetc%2F????wd" for 172.17.0.1 at 2019-04-16 15:12:29 +0000
+Processing by UserController#show as HTML
+  Parameters: {"???wd"=>nil, "id"=>"/etc/"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template /etc with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/%2Fetc%2Fp???wd" for 172.17.0.1 at 2019-04-16 15:12:34 +0000
+Processing by UserController#show as HTML
+  Parameters: {"??wd"=>nil, "id"=>"/etc/p"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template etc/p with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd" for 172.17.0.1 at 2019-04-16 15:12:37 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-16 15:12:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-16 15:12:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-16 15:12:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-16 15:12:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-16 15:12:37 +0000
+
+
+Started GET "/" for 172.17.0.1 at 2019-04-16 15:23:44 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.8/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.17.0.1 at 2019-04-17 09:45:13 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.8/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 69ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 172.17.0.1 at 2019-04-17 09:45:23 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered /usr/local/bundle/gems/railties-4.0.8/lib/rails/templates/rails/info/properties.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 50.3ms | ActiveRecord: 24.9ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd" for 172.17.0.1 at 2019-04-17 09:45:38 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.3ms)
+Completed 200 OK in 189ms (Views: 188.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:38 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-17 09:45:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:38 +0000
+
+
+Started GET "/users/%2Fetc%2Fpasswd." for 172.17.0.1 at 2019-04-17 09:45:44 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/%2Fetc%2Fpasswd."):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (38.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (145.7ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd.sad" for 172.17.0.1 at 2019-04-17 09:45:48 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-17 09:45:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:48 +0000
+
+
+Started GET "/users/%2Fetc%2Fpasswd.asdfasd" for 172.17.0.1 at 2019-04-17 09:45:52 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-17 09:45:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-17 09:45:52 +0000
+
+
+Started GET "/users/%2Fetc%2Fpasswd..as" for 172.17.0.1 at 2019-04-17 09:45:55 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/%2Fetc%2Fpasswd..as"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.5ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:46:17 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 58ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment" for 172.17.0.1 at 2019-04-17 09:46:23 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment." for 172.17.0.1 at 2019-04-17 09:46:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/%2Flog%2Fdevelopment."):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment" for 172.17.0.1 at 2019-04-17 09:46:30 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment" for 172.17.0.1 at 2019-04-17 09:47:01 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:47:06 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/users/.%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:47:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/.%2Flog%2Fdevelopment.log"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:48:22 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2Flog%2Ftest" for 172.17.0.1 at 2019-04-17 09:48:37 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/log/test"}
+DEPRECATION WARNING: The file /app/log/test did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered log/test within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-17 09:48:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-17 09:48:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-17 09:48:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-17 09:48:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-17 09:48:37 +0000
+
+
+Started GET "/users/%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:48:44 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:49:24 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment.log" for 172.17.0.1 at 2019-04-17 09:49:36 +0000
+Processing by UserController#show as 
+  Parameters: {"id"=>"/log/development"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template log/development with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/app/app/views"
+  * "/app"
+  * "/"
+):
+  app/controllers/user_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-17 09:49:46 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (3.6ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-17 09:51:56 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__4430161135955668402__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-17 09:52:04 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-17 09:52:40 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__4430161135955668402__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/users/dashboard?blablabla=%3C%=%60ls%60%20%%3E" for 172.17.0.1 at 2019-04-17 09:52:41 +0000
+
+Rack::Utils::InvalidParameterError (invalid %-encoding (%3C%=%60ls%60%20%%3E)):
+  rack (1.6.0) lib/rack/utils.rb:121:in `rescue in parse_nested_query'
+  rack (1.6.0) lib/rack/utils.rb:111:in `parse_nested_query'
+  rack (1.6.0) lib/rack/request.rb:369:in `parse_query'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:321:in `parse_query'
+  rack (1.6.0) lib/rack/request.rb:191:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/request.rb:274:in `GET'
+  actionpack (4.0.8) lib/action_dispatch/http/parameters.rb:16:in `parameters'
+  actionpack (4.0.8) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.0.8) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.0.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.8) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.8) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.8) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.8) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.8) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:373:in `_run__4430161135955668402__call__callbacks'
+  activesupport (4.0.8) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-17 09:52:45 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/dashboard?blablabla=%3c%25%3d%60%6c%73%60%25%32%30%25%3e" for 172.17.0.1 at 2019-04-17 09:54:44 +0000
+Processing by UserController#show as */*
+  Parameters: {"blablabla"=>"<%=`ls`%20%>", "id"=>"dashboard"}
+  Rendered user/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-17 09:54:53 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (99.9ms)
+Completed 200 OK in 109ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-17 09:57:25 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (8.7ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd" for 172.17.0.1 at 2019-04-19 13:36:06 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (1.1ms)
+Completed 200 OK in 87ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/dashboard?blablabla=%3c%25%3d%60%6c%73%60%25%32%30%25%3e" for 172.17.0.1 at 2019-04-19 13:36:21 +0000
+Processing by UserController#show as */*
+  Parameters: {"blablabla"=>"<%=`ls`%20%>", "id"=>"dashboard"}
+  Rendered user/dashboard.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-19 13:36:32 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (107.0ms)
+Completed 200 OK in 117ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.17.0.1 at 2019-04-19 13:40:27 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.4ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-19 13:40:59 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (12.7ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-19 13:40:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-19 13:40:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-19 13:40:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-19 13:40:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-19 13:40:59 +0000
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-19 13:41:42 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (11.7ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-04-19 13:41:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-04-19 13:41:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-04-19 13:41:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-04-19 13:41:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-04-19 13:41:42 +0000
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-04-19 14:15:25 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (115.9ms)
+Completed 200 OK in 353ms (Views: 324.7ms | ActiveRecord: 0.0ms)
