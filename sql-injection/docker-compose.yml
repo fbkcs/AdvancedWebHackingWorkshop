@@ -1,0 +1,7 @@
+webapp:
+  build: .
+  command: "/run.sh"
+  volumes:
+    - .:/app
+  ports:
+    - "8088:80"
