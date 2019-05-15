@@ -1,0 +1,57 @@
+#####
+# Docker compose YAML file
+#
+# For documentation see: https://docs.docker.com/compose/yml/
+#####
+
+version: "3"
+
+volumes:
+  static-files:
+    driver: local
+  postgres:
+    driver: local
+    
+services:
+    db:
+      image: postgres:11.1
+      volumes:
+        - postgres:/var/lib/postgresql/data/pgdata
+      env_file:
+        - ./config/environment/development.env
+
+    webserver:
+      image: nginx:1.15
+      ports:
+        - "8888:80"
+        - "443:443"
+      depends_on:
+        - webapp
+      volumes:
+        - ./config/webserver/nginx.tmpl:/etc/nginx/conf.d/nginx.tmpl
+        - ./config/webserver/localhost.crt:/etc/ssl/certs/localhost.crt
+        - ./config/webserver/localhost.key:/etc/ssl/private/localhost.key
+        - static-files:/srv/static-files
+      env_file:
+        - ./config/environment/development.env
+      command: /bin/sh -c "envsubst < /etc/nginx/conf.d/nginx.tmpl > /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"
+
+    webapp:
+      build:
+        context: webapp
+      volumes:
+        - ./webapp/starter:/srv/starter
+        - static-files:/srv/static-files
+      expose:
+        - "8000"
+      depends_on:
+        - db
+      env_file:
+        - ./config/environment/development.env
+    redis:
+      image: redis
+      container_name: cache
+      expose:
+        - 6379
+      ports:
+        - "6379:6379"

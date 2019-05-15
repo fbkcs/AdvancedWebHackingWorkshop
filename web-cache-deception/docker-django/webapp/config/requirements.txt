@@ -1,0 +1,5 @@
+django==2.1.4
+uwsgi==2.0.17.1
+psycopg2-binary==2.7.6.1
+django-admin-caching
+django-redis
