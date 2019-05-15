@@ -8,6 +8,7 @@
   <?if(!loggedIn()):?>
     <a href="join.php">Register</a> |
     <a href="login.php">Login</a> |
+    <a href="ssjs.php">Server Side Java Script</a> |
   <?else:?>
     <a href="logout.php">Logout</a>
   <?endif;?>

@@ -15,6 +15,15 @@ function checkPass($login, $password)
 	endif;
 }
 
+function getData($login)
+{
+	global $coll;
+	$res = $coll->findOne(array('login' => $login));
+	if($res):
+	return $res;
+	endif;
+}
+
 function cleanMemberSession($login, $password)
 {
 
