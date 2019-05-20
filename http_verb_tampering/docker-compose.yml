@@ -9,7 +9,7 @@ services:
       - backend
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/
-    container_name: phpPHP
+     
   apache:
     build:
       context: './apacheA/'
@@ -21,10 +21,10 @@ services:
       - frontend
       - backend
     ports:
-      - "80:80"
+      - "8009:80"
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/
-    container_name: apacheA
+     
 networks:
   frontend:
   backend:

@@ -6,7 +6,7 @@ services:
 
     webserver:
       image: nginx:alpine
-      container_name: command-injection-webserver
+       
       working_dir: /application
       volumes:
           - .:/application
@@ -16,7 +16,7 @@ services:
 
     php-fpm:
       build: phpdocker/php-fpm
-      container_name: command-injection-php-fpm
+       
       working_dir: /application
       volumes:
         - .:/application

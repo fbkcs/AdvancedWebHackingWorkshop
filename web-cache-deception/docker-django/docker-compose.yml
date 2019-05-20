@@ -50,7 +50,7 @@ services:
         - ./config/environment/development.env
     redis:
       image: redis
-      container_name: web-cache
+       
       expose:
         - 6379
       ports:
