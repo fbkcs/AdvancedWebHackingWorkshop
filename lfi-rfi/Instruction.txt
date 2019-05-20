@@ -20,5 +20,5 @@ curl "http://localhost:3000/users/%2Flog%2Fdevelopment%2Elog"
 https://xakep.ru/2009/09/17/49508/
 https://xakep.ru/2011/07/03/55787/
 https://github.com/swisskyrepo/PayloadsAllTheThings/
-PHP LFI to arbitratry code execution via rfc1867 file upload temporary files - PHP_LFI_rfc1867
+PHP_LFI_rfc1867 - PHP LFI to arbitratry code execution via rfc1867 file upload temporary files
 https://nvisium.com/blog/2016/01/26/rails-dynamic-render-to-rce-cve-2016-0752.html
