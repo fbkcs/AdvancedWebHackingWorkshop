@@ -2358,3 +2358,60 @@ Processing by UserController#show as */*
   Parameters: {"id"=>"/log/development.log"}
   Rendered log/development.log within layouts/application (115.9ms)
 Completed 200 OK in 353ms (Views: 324.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.17.0.1 at 2019-05-20 11:04:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.8/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 16ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Fetc%2Fpasswd" for 172.17.0.1 at 2019-05-20 11:04:30 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"/etc/passwd"}
+DEPRECATION WARNING: The file /etc/passwd did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered /etc/passwd within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.0.1 at 2019-05-20 11:04:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.0.1 at 2019-05-20 11:04:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.0.1 at 2019-05-20 11:04:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.0.1 at 2019-05-20 11:04:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.0.1 at 2019-05-20 11:04:30 +0000
+
+
+Started GET "/users/dashboard?blablabla=%3c%25%3d%60%6c%73%60%25%32%30%25%3e" for 172.17.0.1 at 2019-05-20 11:05:14 +0000
+Processing by UserController#show as */*
+  Parameters: {"blablabla"=>"<%=`ls`%20%>", "id"=>"dashboard"}
+  Rendered user/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-05-20 11:05:26 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (18.4ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-05-20 11:08:35 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (24.3ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/%2Flog%2Fdevelopment%2Elog" for 172.17.0.1 at 2019-05-20 11:08:41 +0000
+Processing by UserController#show as */*
+  Parameters: {"id"=>"/log/development.log"}
+  Rendered log/development.log within layouts/application (19.2ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
