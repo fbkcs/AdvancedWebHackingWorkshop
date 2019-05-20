@@ -2,7 +2,7 @@ Start docker: ./start.sh
 
 Stop docker: ./end.sh
 
-Examples for arbitrary upload in directory <br><strong>files</strong>
+Examples for arbitrary upload in directory <strong>files</strong>
 
 
 http://127.0.0.1:8080/read.php?file=hello.txt
