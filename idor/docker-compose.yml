@@ -12,7 +12,7 @@ services:
           - .:/application
           - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       ports:
-       - "1337:80"
+       - "1338:80"
 
     php-fpm:
       build: phpdocker/php-fpm
