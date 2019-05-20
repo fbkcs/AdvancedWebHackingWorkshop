@@ -1,16 +1,16 @@
-redis:
+cache:
   image: redis
-   
   expose:
     - 6379
   ports:
     - "6379:6379"
+
 app:
   build: ./
   volumes:
     - ./:/var/www/app
   links:
-    - redis
+    - cache
   ports:
     - 8801:8801
   environment:
