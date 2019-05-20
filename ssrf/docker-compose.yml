@@ -1,0 +1,23 @@
+zabbix:
+  image: berngp/docker-zabbix
+  links: 
+    - nginx-php-fpm
+  volumes:
+    - ./zabbix/:/etc/zabbix/
+
+
+memcached:
+  image: memcached
+  ports:
+    - "11211:11211"
+
+
+nginx-php-fpm:
+  image: marklocker/php7-http2
+  links:
+    - memcached
+  volumes:
+    - .:/tmp/
+  ports:
+    - "80:80"
+  command: "php -S0.0.0.0:80 -t /tmp/"

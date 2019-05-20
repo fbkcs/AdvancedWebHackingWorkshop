@@ -1,0 +1,7 @@
+python:
+  image: python:2-onbuild
+  ports:
+    - "8383:8081"
+  volumes:
+    - .:/tmp/
+  command: python /tmp/crlf.py

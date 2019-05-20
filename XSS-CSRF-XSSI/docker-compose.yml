@@ -1,0 +1,7 @@
+nginx-php-fpm:
+  image: richarvey/nginx-php-fpm
+  volumes:
+    - .:/var/www/html
+  ports:
+    - 8384:80
+  # command: /bin/bash
