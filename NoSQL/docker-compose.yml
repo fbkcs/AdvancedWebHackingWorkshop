@@ -12,7 +12,7 @@ services:
             - "mongodb"
 
     mongodb:
-        image: mongo:latest
+        image: mongo:4.0
          
         restart: always
         ports:
